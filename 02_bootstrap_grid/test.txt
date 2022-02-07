@@ -1,0 +1,7 @@
+Unutar Bootstrap grida, sadržaj se isključivo smešta unutar kolona, kolone unutar redova, a redovi unutar kontejnera.
+Kreiranje Bootstrap kontejnera se može obaviti korišćenjem dve osnovne klase: .container ili .container-fluid.
+Zbog mobile first prirode Bootstrapa, responsive klase za kreiranje kolona uvek se odnose na svoju kategoriju, ali i na sve kategorije iznad. Tako se prikazana klasa odnosi na small, medium, large i extra large uređaje. Stoga će i na extra large uređajima ona zauzimati 3/12 ukupne širine.
+
+S obzirom na to da je prilikom formiranja klase kontejnera iskorišćena odrednica xl, ovakav kontejner će imati širinu od 100%, sve dok je širina vidnog polja manja od 1200px.
+Klasom .container-fluid kreira se okružujući element koji zauzima kompletnu dostupnu širinu unutar vidnog polja.
+Bootstrap grid poznaje tri osnovne grupe elemenata: kontejneri, redovi i kolone. Kontejneri su glavni okružujući elementi, unutar kojih se direktno smeštaju redovi.

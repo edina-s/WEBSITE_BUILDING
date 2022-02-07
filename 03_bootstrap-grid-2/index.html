@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap Grid 2</title>
+    <style>
+        .col-3 {
+            background-color: aquamarine;
+            border: 1px dotted;
+        }
+
+        .row {
+            border: 1px solid;
+        }
+        .col-2 {
+            background-color: aquamarine;
+            border: 1px dotted;
+        }
+        .col-4 {
+            background-color: aquamarine;
+            border: 1px dotted;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <!--Horizontalno poravnanje grida-->
+        <!-- <div class="row justify-content-between">
+            <div class="col-3">.col-3</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-3">.col-3</div>
+        </div>
+    </div> -->
+
+        <!--Vertikalno poravnanje grida-->
+        <!-- <div class="row vh-100 ">
+            <div class="col-3 align-self-center">.col-3</div>
+            <div class="col-3 align-self-end">.col-3</div>
+            <div class="col-3 align-self-stretch">.col-3</div>
+        </div>
+    </div> -->
+
+    <!--Definisanje redosljeda kolona-->
+    <!-- <div class="container">
+        <div class="row"> -->
+            <!-- <div class="col-4 order-2">1st in HTML</div> order-2 postavlja kolonu na 3 mjesto(012) -->
+            <!-- <div class="col-4 order-1">2nd in HTML</div> order-1 postavlja kolonu na 2 mjesto(012) -->
+            <!-- <div class="col-4">3rd in HTML</div> order-0(podrazumjevano) postavlja kolonu na 1 mjesto(012) -->
+        <!-- </div>
+    </div> -->
+
+    <!--Definisanje redosljeda kolona u zavisnosti od velicine displeja-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-4 order-sm-2">1st in HTML</div> 
+            <div class="col-4 order-md-1">2nd in HTML</div>
+            <div class="col-4">3rd in HTML</div> 
+        </div>
+    </div> -->
+    <!-- Pomjeranje kolona unutar grida
+    <div class="container">
+        <div class="row">
+            <div class="col-2 offset-1">.col-2</div>
+            <div class="col-2 offset-2">.col-2</div>
+            <div class="col-2 offset-3">.col-2</div>
+        </div>
+    </div> -->
+    <!--Pomjeranje kolona unutar grida u zavissnosti velicine displeja-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-2 offset-xl-1 offset-md-2">.col-2</div>
+            <div class="col-2 offset-xl-2 offset-md-1">.col-2</div>
+            <div class="col-2 offset-3">.col-2</div>
+        </div>
+    </div> -->
+
+    <!--Uticanje na vidljivost kolona-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-4 d-none d-md-block">1st column</div>
+            <div class="col-4">2nd column</div>
+            <div class="col-4">3rd column</div>
+        </div>
+    </div> -->
+
+    <!-- Gnežđenje -->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">1st column</div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-4">A</div>
+                    <div class="col-4">B</div>
+                    <div class="col-4">C</div>
+                </div>
+                <div class="row">
+                    <div class="col-4">D</div>
+                    <div class="col-4">E</div>
+                    <div class="col-4">F</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">2nd column</div>
+        </div>
+    </div> 
+    
+
+
+
+    <script src="js/jquery-3.6.0.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

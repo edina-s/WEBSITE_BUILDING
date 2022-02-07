@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .blue-text {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--? Pretraga elemenata po ID-ju – getElementById()
+    <div id="div-1">
+        <p id="p-1">Text 1</p>
+        <p id="p-2">Text 2</p>
+        <p>Text 3</p>
+    </div>
+
+
+    <script>
+
+        
+        var paragraph = document.getElementById('p-2');
+
+        alert(paragraph.innerHTML); //innerHTML sadrzaj nekog dokumenta
+        document.title = "Hello World"; //svojstvo title, kojim je moguće promeniti naslov dokumenta 
+    </script>
+    -->
+
+
+
+    <!--? Pretraga elemenata po nazivu klase – getElementsByClassName()
+    <p id="my-class">Text 1</p>
+    <p class="my-class">Text 2</p>
+    <p class="my-class some-other-class">Text 3</p>
+    <p>Text 4</p>
+    <p>Text 5</p>
+    <p class="your-class">Text 6</p>
+
+    <script>
+    
+       var paragraphs = document.getElementsByClassName('my-class');
+
+       for (let i = 0; i < paragraphs.length; i++) {
+           
+           const element = paragraphs[i];
+           console.log(element.innerHTML);
+       }
+
+    </script>
+    -->
+
+    <!--? Selektovanje elemenata na osnovu naziva taga – getElementsByTagName()
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+ 
+    <script>
+       var items = document.getElementsByTagName("li");
+       console.log(items.lenght);
+
+    </script>
+    -->
+
+    <!--? Selektovanje elementa korišćenjem CSS selektora – querySelector(), querySelectorAll()
+    <ul>
+        <li>Item 1</li>
+        <li id="my-id">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        // var item = document.querySelector("#my-id"); //uvijek vraca samo prvi element koji zadovoljava odredjeni kriterium
+        // console.log(item.innerHTML);
+        
+        var items = document.querySelectorAll("li"); //za selektovanje vise elemenata
+        console.log(items.length);
+    </script>
+    -->
+
+    <!--*Izmjene na HTML elementima-->
+    <!--? innerHTML osnovni nacin za rukovanje sadrzajem
+    <p id="the-paragraph">Text 1</p>
+ 
+    <script>
+        var paragraph = document.getElementById('the-paragraph');
+        console.log("Original paragraph content was: " + paragraph.innerHTML);
+
+        paragraph.innerHTML = "Now text set using innerHTML property.";
+    </script>
+    -->
+
+    <!--? Čitanje vrednosti atributa
+    <p id="the-paragraph" class="my-class">Text 1</p>
+ 
+    <script>
+        var paragraph = document.getElementById('the-paragraph');
+        console.log("Id: " + paragraph.id);
+        console.log("Class: " + paragraph.className);
+
+    </script>
+    -->
+
+    <!--? Postavljanje vrednosti atributa
+    <input type="text" name="firstname" id="first-name" value="I want to be button!">
+
+    <script>
+        var input = document.getElementById("first-name");
+        input.setAttribute('type', 'button');
+    </script>
+    -->
+
+    <!--? Rukovanje stilizacijom
+    <p id="the-paragraph" class="my-class">Text 1</p>
+
+    <script>
+        var paragraph = document.getElementById("the-paragraph");
+        paragraph.style.color = "blue"; //definisanje inline stilizacije
+    </script>
+    -->
+
+    <!--? Dodavanje klasa
+    <p id="the-paragraph" class="my-class">Text 1</p>
+ 
+    <script>
+        var paragraph = document.getElementById('the-paragraph');
+        paragraph.classList.add("blue-text");
+    </script>
+    -->
+
+    <!--? Uklanjanje klasa
+    <p id="the-paragraph" class="my-class blue-text">Text 1</p>
+ 
+    <script>
+        var paragraph = document.getElementById('the-paragraph');
+        paragraph.classList.remove("blue-text");
+    </script>
+    -->
+
+    <!--? Dodavanje elemenata
+
+    <p id="the-paragraph" class="my-class blue-text">Non-dynamic paragraph.</p>
+
+    <script>
+
+        var newParagraph = document.createElement("p");
+        var newContent = document.createTextNode("This is dinamically generated paragraph."); //kreiranje sadrzaja
+        newParagraph.appendChild(newContent);
+        // document.body.appendChild(newParagraph); //append dodaje element na kraj dokumenta
+        var oldParagraph = document.getElementById("the-paragraph");
+        document.body.insertBefore(newParagraph, oldParagraph); //dodaje element prije selektovanog elementa
+
+    </script>
+    -->
+
+    <!--? Uklanjanje elemenata
+    <ul id='myList'>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+
+    <script>
+        var list = document.getElementById("myList");
+        list.removeChild(list.children[1]); //uklanjanje drugog elementa Item 2
+
+    </script>
+    -->
+
+    <!--? Zamena elemenata
+    <p id="the-paragraph" class="my-class">Non-dynamic paragraph.</p>
+
+    <script>
+        var newParagraph = document.createElement("p");
+        var newContent = document.createTextNode("This is dynamically generated paragraph!");
+        newParagraph.appendChild(newContent);
+
+        var oldParagraph = document.getElementById("the-paragraph");
+        document.body.replaceChild(newParagraph, oldParagraph);
+
+    </script>
+    -->
+
+
+</html>
+
+
+
+
+
+</script>
+</body>
+
+</html>
